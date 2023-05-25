@@ -310,7 +310,7 @@
     (property "Sheetname" "ADC" (at 161.29 55.1684 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "untitled.kicad_sch" (at 161.29 155.5246 0)
+    (property "Sheetfile" "adc_converters.kicad_sch" (at 161.29 155.5246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "SERVO_POTENTIOMETER_5" input (at 161.29 77.47 180)

@@ -456,12 +456,12 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
+      "gencad": "Hexapod_Hardware.cad",
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "Hexapod_Hardware.step",
+      "vrml": "Hexapod_Hardware.wrl"
     },
     "page_layout_descr_file": ""
   },
