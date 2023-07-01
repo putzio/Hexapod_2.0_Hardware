@@ -31,4 +31,12 @@ fp-info-cache
 #generated files
 *.step
 *.wrl
-# *.pdf
+*.pdf
+
+#compressed files
+*.zip
+*.rar
+*.7z
+
+
+
