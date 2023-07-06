@@ -425,6 +425,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (hierarchical_label "SERVO_PWM_1" (shape output) (at 170.18 95.25 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 36319c93-e0dc-48ec-a1c4-b5f259023627)
+  )
   (hierarchical_label "SPI_MISO" (shape input) (at 140.97 67.31 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3b75bc67-6a5c-4b4c-96bc-d8dcb39d0287)
@@ -432,13 +436,20 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (hierarchical_label "SERVO_PWM_2" (shape output) (at 170.18 95.25 0) (fields_autoplaced)
+  (hierarchical_label "SERVO_PWM_0" (shape output) (at 170.18 105.41 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 7160ebdf-cacd-44e7-ae56-71fd2f70284d)
+    (uuid 57c2e3a0-4422-4e80-9e45-903b0b17d2e6)
   )
   (hierarchical_label "SERVO_POTENTIOMETER_1" (shape input) (at 135.89 127 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 7d57baf2-0f45-4adc-b703-96cd675fbec9)
+  )
+  (hierarchical_label "SERVO_GRIPPER_PWM" (shape output) (at 170.18 102.87 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 7e10ff41-68df-486c-ac1e-930c84810e53)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.5827 102.87 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
   )
   (hierarchical_label "SWCLK" (shape input) (at 148.59 63.5 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -454,17 +465,6 @@
   (hierarchical_label "SERVO_POTENTIOMETER_GRIPPER" (shape input) (at 111.76 107.95 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a5555397-89bd-43c2-adc3-cc2ccce25028)
-  )
-  (hierarchical_label "SERVO_GRIPPER_PWM" (shape output) (at 170.18 105.41 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid a6c922ac-bf0e-49fc-8694-af6320cbee44)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 192.5827 105.41 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (hierarchical_label "SERVO_PWM_0" (shape output) (at 170.18 102.87 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid aecce4d7-8b9e-4415-a626-49f440effa9a)
   )
   (hierarchical_label "SERVO_CURRENT_SENSOR_1" (shape input) (at 140.97 127 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
@@ -484,16 +484,16 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid cb488e1d-8b86-4583-a52b-fd18b03a0d0f)
   )
+  (hierarchical_label "SERVO_PWM_2" (shape output) (at 170.18 97.79 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid cda22016-f92c-4b09-8504-b6037eb8787c)
+  )
   (hierarchical_label "SPI_CS_GRIPPER" (shape input) (at 146.05 127 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d3e94d9d-9553-4afd-9ca4-7e4448abed46)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 146.05 144.7461 90)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
-  )
-  (hierarchical_label "SERVO_PWM_1" (shape output) (at 170.18 97.79 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d4b48406-92b0-4b91-9168-d4cedca2ad5b)
   )
   (hierarchical_label "SERVO_POTENTIOMETER_2" (shape input) (at 148.59 127 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
@@ -521,7 +521,7 @@
   (symbol (lib_id "Device:C_Small") (at 102.87 96.52 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a51627a-b4e0-44b9-a822-65d6edc8fdd1)
-    (property "Reference" "C30" (at 99.06 97.79 0)
+    (property "Reference" "C601" (at 99.06 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10uF" (at 99.06 95.25 0)
@@ -537,11 +537,8 @@
     (pin "2" (uuid 207f9dfe-a2af-4f64-87cd-71d6f371e898))
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9"
-          (reference "C30") (unit 1)
-        )
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9/2866b240-bcad-4f09-afcc-1811f3d507a8"
-          (reference "C8") (unit 1)
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0/2866b240-bcad-4f09-afcc-1811f3d507a8"
+          (reference "C601") (unit 1)
         )
       )
       (project "test_ADC_and_CurrentSensors"
@@ -555,7 +552,7 @@
   (symbol (lib_id "STM32G030K8T6:STM32G030K8T6") (at 115.57 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a8ac5837-6a83-4b10-8f21-221573c662d8)
-    (property "Reference" "IC16" (at 170.18 83.5912 0)
+    (property "Reference" "IC601" (at 170.18 83.5912 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "STM32G030K8T6" (at 170.18 86.1312 0)
@@ -625,11 +622,8 @@
     (pin "9" (uuid 9a200d18-66c7-4938-a48f-5824eb87d478))
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9"
-          (reference "IC16") (unit 1)
-        )
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9/2866b240-bcad-4f09-afcc-1811f3d507a8"
-          (reference "IC4") (unit 1)
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0/2866b240-bcad-4f09-afcc-1811f3d507a8"
+          (reference "IC601") (unit 1)
         )
       )
       (project "test_ADC_and_CurrentSensors"
@@ -643,7 +637,7 @@
   (symbol (lib_id "power:GND") (at 91.44 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid deec76da-7591-439e-b654-755cc382eff8)
-    (property "Reference" "#PWR0131" (at 91.44 106.68 0)
+    (property "Reference" "#PWR0601" (at 91.44 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 92.71 97.79 0)
@@ -658,11 +652,8 @@
     (pin "1" (uuid 03eea505-0ec6-404c-8845-070a57e1c73d))
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9"
-          (reference "#PWR0131") (unit 1)
-        )
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9/2866b240-bcad-4f09-afcc-1811f3d507a8"
-          (reference "#PWR083") (unit 1)
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0/2866b240-bcad-4f09-afcc-1811f3d507a8"
+          (reference "#PWR0601") (unit 1)
         )
       )
       (project "test_ADC_and_CurrentSensors"

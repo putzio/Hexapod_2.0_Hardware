@@ -204,63 +204,6 @@
         )
       )
     )
-    (symbol "Switch:SW_DIP_x01" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SW_DIP_x01" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "dip switch" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SW?DIP?x1*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_DIP_x01_0_0"
-        (circle (center -2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 0.127)
-            (xy 2.3622 1.1684)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "SW_DIP_x01_0_1"
-        (rectangle (start -3.81 2.54) (end 3.81 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "SW_DIP_x01_1_1"
-        (pin passive line (at -7.62 0 0) (length 5.08)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 0 180) (length 5.08)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -407,9 +350,6 @@
     )
   )
 
-  (junction (at 190.5 96.52) (diameter 0) (color 0 0 0 0)
-    (uuid 4eaea5cb-b652-4c2d-862d-e52fac4d6c31)
-  )
 
   (wire (pts (xy 115.57 111.76) (xy 119.38 111.76))
     (stroke (width 0) (type default))
@@ -426,10 +366,6 @@
   (wire (pts (xy 115.57 106.68) (xy 119.38 106.68))
     (stroke (width 0) (type default))
     (uuid 22f14816-8424-4e18-b7d5-af6258cdae0d)
-  )
-  (wire (pts (xy 190.5 91.44) (xy 190.5 96.52))
-    (stroke (width 0) (type default))
-    (uuid 2a53f49b-986a-4020-8b49-21baedc43be1)
   )
   (wire (pts (xy 161.29 93.98) (xy 154.94 93.98))
     (stroke (width 0) (type default))
@@ -509,13 +445,9 @@
     (uuid a48bb33c-b500-4583-8391-2fae8f6d3c4a)
   )
 
-  (wire (pts (xy 154.94 83.82) (xy 172.72 83.82))
+  (wire (pts (xy 190.5 85.09) (xy 190.5 83.82))
     (stroke (width 0) (type default))
-    (uuid a610b616-b7b1-4238-88d8-b55f8f23274b)
-  )
-  (wire (pts (xy 175.26 91.44) (xy 154.94 91.44))
-    (stroke (width 0) (type default))
-    (uuid a93f3384-797f-431a-b6a5-6f23e3f5c657)
+    (uuid a89fc5b1-7a66-4502-8f43-49c2579c6df2)
   )
   (wire (pts (xy 154.94 68.58) (xy 173.99 68.58))
     (stroke (width 0) (type default))
@@ -528,6 +460,10 @@
   (wire (pts (xy 91.44 96.52) (xy 119.38 96.52))
     (stroke (width 0) (type default))
     (uuid c3a1281b-aa05-415e-8af6-8f1dcd3db383)
+  )
+  (wire (pts (xy 190.5 83.82) (xy 154.94 83.82))
+    (stroke (width 0) (type default))
+    (uuid ccaeff52-7f51-486f-8b64-e14e5da5347b)
   )
   (wire (pts (xy 115.57 101.6) (xy 119.38 101.6))
     (stroke (width 0) (type default))
@@ -550,6 +486,14 @@
     (uuid e5622793-3823-4b9f-9fd8-9f6bc7106aee)
   )
 
+  (wire (pts (xy 154.94 86.36) (xy 161.29 86.36))
+    (stroke (width 0) (type default))
+    (uuid e7a05f15-8534-4d12-9e17-f4a923f06cb4)
+  )
+  (wire (pts (xy 154.94 88.9) (xy 161.29 88.9))
+    (stroke (width 0) (type default))
+    (uuid ecf2b610-8b20-489a-b851-1ca9f10a6f81)
+  )
   (wire (pts (xy 115.57 91.44) (xy 119.38 91.44))
     (stroke (width 0) (type default))
     (uuid edd8c1d2-52fc-45b4-843a-e7dee2289649)
@@ -620,9 +564,17 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3cd6d6b8-d84f-4ccc-8655-da120e289c8c)
   )
+  (hierarchical_label "FLASH_HOLD" (shape output) (at 161.29 86.36 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 3cfa6fb4-8675-4b56-bea5-8b2ec3e1b33e)
+  )
   (hierarchical_label "I2C_SCL" (shape output) (at 161.29 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4304cb55-bd74-4879-8b8b-ae852c26f8a3)
+  )
+  (hierarchical_label "FLASH_WP" (shape output) (at 161.29 88.9 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 48870d0c-9f57-4db1-8716-238373d7c5c0)
   )
   (hierarchical_label "SPI_CS_GRIPPER" (shape output) (at 161.29 106.68 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -684,36 +636,10 @@
     (uuid f5bd4503-26b8-49a5-96c5-4c39d378f4e0)
   )
 
-  (symbol (lib_id "Switch:SW_DIP_x01") (at 182.88 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 044b5a99-b31f-493c-9f24-6c76b4aa5f43)
-    (property "Reference" "SW1" (at 182.88 83.82 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SW_DIP_x01" (at 182.88 86.36 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH-12mm" (at 182.88 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 182.88 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8da88579-7409-4acb-a69a-201e0e35c798))
-    (pin "2" (uuid e1c4b424-52c8-403a-9a79-a375a6b1ff0c))
-    (instances
-      (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 190.5 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0addc50c-8e8d-40c3-b000-23f0aafbd004)
-    (property "Reference" "#PWR036" (at 190.5 115.57 0)
+    (property "Reference" "#PWR0511" (at 190.5 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 113.03 0)
@@ -729,7 +655,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR0511") (unit 1)
         )
       )
     )
@@ -738,7 +664,7 @@
   (symbol (lib_id "power:GND") (at 91.44 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4064db56-1e73-4dc4-848a-b5c3ed830611)
-    (property "Reference" "#PWR027" (at 91.44 90.17 0)
+    (property "Reference" "#PWR0502" (at 91.44 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 87.63 0)
@@ -754,7 +680,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR0502") (unit 1)
         )
       )
     )
@@ -763,7 +689,7 @@
   (symbol (lib_id "power:GND") (at 91.44 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5899a6fa-a89f-46dc-8d31-df9e0a5b9319)
-    (property "Reference" "#PWR026" (at 91.44 77.47 0)
+    (property "Reference" "#PWR0501" (at 91.44 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 74.93 0)
@@ -779,7 +705,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR0501") (unit 1)
         )
       )
     )
@@ -788,7 +714,7 @@
   (symbol (lib_id "power:GND") (at 137.16 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 644f5390-c52c-4c1f-a4b1-92c971e45dad)
-    (property "Reference" "#PWR030" (at 137.16 132.08 0)
+    (property "Reference" "#PWR0505" (at 137.16 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.16 130.81 0)
@@ -804,7 +730,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR0505") (unit 1)
         )
       )
     )
@@ -813,7 +739,7 @@
   (symbol (lib_id "power:GND") (at 190.5 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8bce7123-a9b7-411f-bbd8-1de630a8a54f)
-    (property "Reference" "#PWR035" (at 190.5 102.87 0)
+    (property "Reference" "#PWR0510" (at 190.5 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 100.33 0)
@@ -829,32 +755,32 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR0510") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 172.72 83.82 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 190.5 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9351d6f6-0112-40a3-b7b0-1db6a5f41c3a)
-    (property "Reference" "#PWR032" (at 172.72 90.17 0)
+    (property "Reference" "#PWR0509" (at 190.5 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 172.72 87.63 0)
+    (property "Value" "GND" (at 190.5 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 172.72 83.82 0)
+    (property "Footprint" "" (at 190.5 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 172.72 83.82 0)
+    (property "Datasheet" "" (at 190.5 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9a2a60cb-a198-4a12-823c-9849c7474233))
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR0509") (unit 1)
         )
       )
     )
@@ -863,7 +789,7 @@
   (symbol (lib_id "MCU_RaspberryPi_and_Boards:Pico") (at 137.16 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94c9076f-6046-451e-9591-29021a945f51)
-    (property "Reference" "U1" (at 137.16 59.69 0)
+    (property "Reference" "U501" (at 137.16 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Pico" (at 137.16 62.23 0)
@@ -921,7 +847,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "U1") (unit 1)
+          (reference "U501") (unit 1)
         )
       )
     )
@@ -930,7 +856,7 @@
   (symbol (lib_id "power:+3.3V") (at 161.29 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95a7c640-7a24-416a-8c28-2112bca9670f)
-    (property "Reference" "#PWR031" (at 161.29 80.01 0)
+    (property "Reference" "#PWR0506" (at 161.29 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 165.1 74.93 0)
@@ -946,7 +872,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR0506") (unit 1)
         )
       )
     )
@@ -955,7 +881,7 @@
   (symbol (lib_id "power:+5V") (at 173.99 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b4bc2acf-bb0f-4701-9cfb-c7d7d6c09898)
-    (property "Reference" "#PWR033" (at 173.99 69.85 0)
+    (property "Reference" "#PWR0507" (at 173.99 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 173.99 60.96 0)
@@ -971,7 +897,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR0507") (unit 1)
         )
       )
     )
@@ -980,7 +906,7 @@
   (symbol (lib_id "power:GND") (at 173.99 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b90b2a9b-5230-44b5-ad55-d3281ed8863d)
-    (property "Reference" "#PWR034" (at 173.99 77.47 0)
+    (property "Reference" "#PWR0508" (at 173.99 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 173.99 76.2 0)
@@ -996,7 +922,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR0508") (unit 1)
         )
       )
     )
@@ -1005,7 +931,7 @@
   (symbol (lib_id "power:GND") (at 91.44 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bd7162e9-054d-4ca6-b032-b65f8c3af667)
-    (property "Reference" "#PWR028" (at 91.44 102.87 0)
+    (property "Reference" "#PWR0503" (at 91.44 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 100.33 0)
@@ -1021,7 +947,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR0503") (unit 1)
         )
       )
     )
@@ -1030,7 +956,7 @@
   (symbol (lib_id "power:GND") (at 91.44 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e60a8dae-0a3f-44c8-9059-1f43941292ad)
-    (property "Reference" "#PWR029" (at 91.44 115.57 0)
+    (property "Reference" "#PWR0504" (at 91.44 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 113.03 0)
@@ -1046,7 +972,7 @@
     (instances
       (project "Hexapod_Hardware"
         (path "/04005f68-61ba-4735-aba3-9cac296c0cce/a539e409-d551-46bc-9b5e-4b2b4775713e"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR0504") (unit 1)
         )
       )
     )

@@ -121,9 +121,9 @@
     (stroke (width 0) (type default))
     (uuid 0fc0ff01-6c4d-4584-86b6-99d0964b7b8d)
   )
-  (wire (pts (xy 163.83 102.87) (xy 166.37 102.87))
+  (wire (pts (xy 163.83 100.33) (xy 166.37 100.33))
     (stroke (width 0) (type default))
-    (uuid 1f977b21-b9ae-4a32-b960-6286c016ad77)
+    (uuid 1b8b90df-bb48-4e54-bb9c-c09d2250ed88)
   )
   (wire (pts (xy 163.83 113.03) (xy 171.45 113.03))
     (stroke (width 0) (type default))
@@ -165,6 +165,10 @@
     (stroke (width 0) (type default))
     (uuid 7279f7dd-c3a1-4039-b405-0c539c0feba9)
   )
+  (wire (pts (xy 163.83 102.87) (xy 166.37 102.87))
+    (stroke (width 0) (type default))
+    (uuid 8103dd3d-bce7-4ed0-b92a-e00c5468500d)
+  )
   (wire (pts (xy 109.22 139.7) (xy 116.84 139.7))
     (stroke (width 0) (type default))
     (uuid 892d8316-934c-48a9-b609-61dcd75baa06)
@@ -188,10 +192,6 @@
   (wire (pts (xy 163.83 124.46) (xy 171.45 124.46))
     (stroke (width 0) (type default))
     (uuid d77b7f98-4078-414d-ad98-03f155b4e7d1)
-  )
-  (wire (pts (xy 163.83 100.33) (xy 166.37 100.33))
-    (stroke (width 0) (type default))
-    (uuid e26ff71a-39a0-4462-8369-4c6d49f3430e)
   )
   (wire (pts (xy 109.22 142.24) (xy 116.84 142.24))
     (stroke (width 0) (type default))
@@ -222,7 +222,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 171.45 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2798dcb7-a26b-4c06-b3e6-d00879f29988)
-    (property "Reference" "J23" (at 173.99 102.235 0)
+    (property "Reference" "J201" (at 173.99 102.235 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x03" (at 173.99 104.775 0)
@@ -239,8 +239,8 @@
     (pin "3" (uuid 9f85ca64-04ef-4d77-b0bd-5d2af331bbe1))
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9"
-          (reference "J23") (unit 1)
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0"
+          (reference "J201") (unit 1)
         )
       )
     )
@@ -249,7 +249,7 @@
   (symbol (lib_id "power:+6V") (at 86.36 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a53baf88-89ab-4b5f-ba6b-98e0a0b9aa67)
-    (property "Reference" "#PWR071" (at 86.36 88.9 0)
+    (property "Reference" "#PWR0201" (at 86.36 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+6V" (at 86.36 81.28 0)
@@ -264,8 +264,8 @@
     (pin "1" (uuid f278397d-5728-4378-844e-b2e3030daf89))
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9"
-          (reference "#PWR071") (unit 1)
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0"
+          (reference "#PWR0201") (unit 1)
         )
       )
     )
@@ -341,7 +341,7 @@
     )
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9" (page "11"))
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0" (page "9"))
       )
     )
   )
@@ -382,7 +382,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 6d7f55a0-4589-435a-a720-de83ef571a32)
     )
-    (pin "SWDIO" bidirectional (at 163.83 102.87 0)
+    (pin "SWDIO" bidirectional (at 163.83 100.33 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid fccfc491-2b0e-42fa-bf16-922c1c0d181a)
     )
@@ -422,7 +422,7 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 3f5f9086-7c69-46df-83f4-06c80fae7cdb)
     )
-    (pin "SWCLK" input (at 163.83 100.33 0)
+    (pin "SWCLK" input (at 163.83 102.87 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid ee512465-d9de-456a-8e8e-cb8ab78c5b1e)
     )
@@ -444,7 +444,7 @@
     )
     (instances
       (project "Hexapod_Hardware"
-        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/131ce24a-6b68-4bf4-9124-91468713a7c9" (page "11"))
+        (path "/04005f68-61ba-4735-aba3-9cac296c0cce/2cd4ba25-52d1-4db4-b74d-e04810e070ce/59004b94-8694-4dc2-864b-96bb314c80e0" (page "6"))
       )
     )
   )

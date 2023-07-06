@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.39999999999999997
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -178,7 +178,9 @@
         0.0,
         0.4,
         0.7,
-        1.0
+        1.0,
+        2.0,
+        3.0
       ],
       "via_dimensions": [
         {
@@ -466,7 +468,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 800,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
@@ -515,6 +517,10 @@
       ""
     ],
     [
+      "59004b94-8694-4dc2-864b-96bb314c80e0",
+      "Gripper"
+    ],
+    [
       "79dfd97e-c5b7-4bf6-8565-2e40ec4d9db4",
       "Servo Connectors1"
     ],
@@ -525,6 +531,10 @@
     [
       "a539e409-d551-46bc-9b5e-4b2b4775713e",
       "MCU"
+    ],
+    [
+      "2866b240-bcad-4f09-afcc-1811f3d507a8",
+      "MCU_GRIPPER"
     ],
     [
       "00972d1d-be77-4864-b94b-f320cef95497",
@@ -539,16 +549,12 @@
       "Power Supply"
     ],
     [
-      "131ce24a-6b68-4bf4-9124-91468713a7c9",
-      "Gripper"
-    ],
-    [
       "023ecb26-c738-4aec-b3ca-f6261eeb748c",
       "Gripper_servo"
     ],
     [
-      "2866b240-bcad-4f09-afcc-1811f3d507a8",
-      "MCU_GRIPPER"
+      "2cd4ba25-52d1-4db4-b74d-e04810e070ce",
+      "SUPPORTING_MODULES"
     ]
   ],
   "text_variables": {}

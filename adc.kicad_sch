@@ -171,11 +171,6 @@
     (stroke (width 0) (type default))
     (uuid abf5d359-836a-4ce9-98aa-cbc2f106f77e)
   )
-  (bus (pts (xy 201.93 109.22) (xy 210.82 109.22))
-    (stroke (width 0) (type default))
-    (uuid adbc9465-6488-4e31-8280-d09f440470ac)
-  )
-
   (wire (pts (xy 104.14 72.39) (xy 107.95 72.39))
     (stroke (width 0) (type default))
     (uuid ae482997-dee1-4e19-a840-2d5205f183d0)
@@ -253,10 +248,6 @@
   (hierarchical_label "SERVO_PWM_1" (shape input) (at 102.87 49.53 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 6f8d04a4-0813-40be-9829-0333478445b6)
-  )
-  (hierarchical_label "SPI_CS_2" (shape input) (at 210.82 109.22 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 8166b3cc-fcfe-4fed-99ef-33a092aaaf93)
   )
   (hierarchical_label "SPI_CS_0" (shape input) (at 210.82 104.14 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -428,10 +419,6 @@
     (pin "SPI_CS_0" input (at 201.93 104.14 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 96db2fcd-3b32-451c-8bc9-b74fdb80e07f)
-    )
-    (pin "SPI_CS_2" input (at 201.93 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 90af37bd-ff05-4372-bb72-629f3e8da110)
     )
     (instances
       (project "Hexapod_Hardware"
